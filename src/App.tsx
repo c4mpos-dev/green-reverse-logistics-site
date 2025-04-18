@@ -1,9 +1,10 @@
-import { Folder } from "./components/Folder";
+import { BrowserRouter } from "react-router-dom";
+import { Router } from "./Router";
 
 export function App() {
     return (
-        <div className="flex flex-col justify-center items-center w-full h-screen bg-green-800">
-            <Folder />
-        </div>
-    );
+        <BrowserRouter>
+            <Router />
+        </BrowserRouter>
+    )
 }
