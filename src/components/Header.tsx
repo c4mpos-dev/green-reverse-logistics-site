@@ -16,7 +16,7 @@ export const Header = () => {
     ];
 
     return (
-        <header className="w-full fixed top-0 left-0 bg-green-900 text-white shadow-md shadow-black/50 z-50">
+        <header className="w-full fixed top-0 left-0 bg-green-700 text-white shadow-md shadow-black/50 z-50">
             <div className="flex justify-between items-center px-8 py-5">
                 <h1 className="text-xl font-bold">GRL</h1>
                 <nav className="hidden md:flex gap-6">
