@@ -15,7 +15,7 @@ type SidebarMenuProps = {
 export function SidebarMenu({ isOpen, onClose, routes }: SidebarMenuProps) {
     return (
         <div>
-            {/* Fundo escuro (overlay) */}
+            {/* Overlay */}
             <div
                 className={`fixed inset-0 bg-black/50 z-40 transition-opacity duration-300 ${
                     isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
@@ -45,9 +45,7 @@ export function SidebarMenu({ isOpen, onClose, routes }: SidebarMenuProps) {
                             {route.name}
                         </NavLink>
                     ))}
-                    <span className="mt-auto text-xs text-gray-400">
-                        © 2025 GRL
-                    </span>
+                    <span className="mt-auto text-xs text-gray-400">© 2025 GRL</span>
                 </div>
             </div>
         </div>

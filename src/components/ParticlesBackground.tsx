@@ -18,6 +18,14 @@ export function ParticlesBackground() {
                 id="tsparticles"
                 init={particlesInit}
                 loaded={particlesLoaded}
+                style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "100%",
+                    zIndex: 0,
+                }}
                 options={{
                     fpsLimit: 120,
                     interactivity: {
@@ -69,7 +77,7 @@ export function ParticlesBackground() {
                         number: {
                             density: {
                                 enable: true,
-                                area: 1000
+                                area: 900
                             },
                             value: 90
                         },
