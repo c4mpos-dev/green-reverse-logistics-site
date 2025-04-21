@@ -4,7 +4,8 @@ import {
     faHouse,
     faHandshake,
     faTruck,
-    faRecycle
+    faRecycle,
+    faLeaf
 } from "@fortawesome/free-solid-svg-icons";
 
 import CarAnimated from "../assets/car-animated.png";
@@ -37,6 +38,7 @@ export function TransportTimeline() {
         <div className="flex flex-col items-center w-full my-6">
             {/* Imagem + Timeline */}
             <div className="w-full flex flex-col lg:flex-row items-center justify-center gap-10">
+                <h1 className="text-2xl italic font-bold text-green-800 mb-[-10px]">-- Como funciona? --</h1>
                 <img src={CarAnimated} className="opacity-90 max-w-4xl w-full lg:w-1/2 rounded-xl shadow-xl"/>
 
                 {/* Timeline */}
@@ -67,18 +69,18 @@ export function TransportTimeline() {
 
             {/* Diferença entre logísticas */}
             <div className="mt-14 max-w-3xl px-4">
-                <h2 className="text-center text-2xl font-bold text-green-800 mb-4">
+                <h2 className="text-center text-2xl font-bold text-green-800 mb-4 border-b border-green-700 pb-2">
                     Logística Reversa ou Verde?
                 </h2>
                 <p className="text-gray-700 mb-4 text-sm md:text-base">
-                    <strong>♻️ Logística Reversa:</strong> trata do retorno do produto após o consumo para reaproveitamento ou descarte adequado.
+                    <strong><FontAwesomeIcon icon={faRecycle} className="text-green-700"/> Logística Reversa:</strong> trata do retorno do produto após o consumo para reaproveitamento ou descarte adequado.
                 </p>
-                <p className="text-gray-700 text-sm md:text-base">
-                    <strong>🌿 Logística Verde:</strong> cuida para que todo o processo seja feito com o menor impacto ambiental possível.
+                <p className="text-gray-700 text-sm md:text-base border-b border-green-700 pb-2">
+                    <strong><FontAwesomeIcon icon={faLeaf} className="text-green-700"/> Logística Verde:</strong> cuida para que todo o processo seja feito com o menor impacto ambiental possível.
                 </p>
             </div>
 
-            <p className="text-green-700 font-semibold text-lg italic mt-8 text-center max-w-xl">
+            <p className="text-green-700 font-semibold text-lg italic mt-5 text-center max-w-xl">
                 A gente busca na sua porta. Você ajuda a transformar o planeta.
             </p>
         </div>

@@ -56,7 +56,7 @@ export function Home() {
             </div>
 
             {/* Transport Timeline */}
-            <div className=" flex items-center justify-center bg-neutral-200 z-10 px-6">
+            <div className=" flex items-center justify-center bg-neutral-200 z-10 px-6 border-b border-green-700">
                 <TransportTimeline />
             </div>
         </div>
