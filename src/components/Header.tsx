@@ -15,10 +15,10 @@ export function Header() {
 
     const routes: RouteItem[] = [
         { name: "Início", path: "/" },
-        { name: "Sobre Nós", path: "/sobre" },
-        { name: "Como Funciona?", path: "/#como-funciona" },
-        { name: "Faq", path: "/faq" },
+        { name: "Como funciona?", path: "/#como-funciona" },
+        { name: "Sobre nós", path: "/sobre" },
         { name: "Parceiros", path: "/parceiros" },
+        { name: "Faq", path: "/faq" },
         { name: "Contato", path: "/contato" },
     ];
 
@@ -69,8 +69,8 @@ export function Header() {
                                 key={route.path}
                                 to={route.path}
                                 onClick={() => handleScroll(route.path)} // Navegação suave
-                                className="cursor-pointer"
-                            >
+                                className="rounded-lg cursor-pointer transition-all duration-200 hover:scale-105 hover:bg-green-800 px-2 py-2"
+                            > 
                                 {route.name}
                             </NavLink>
                         ))}

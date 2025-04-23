@@ -40,7 +40,7 @@ export function SidebarMenu({ isOpen, onClose, routes }: SidebarMenuProps) {
                             key={route.path}
                             to={route.path}
                             onClick={onClose} // apenas fecha o menu
-                            className="py-3 text-neutral-900 font-medium border-b border-neutral-300"
+                            className="px-3 py-3 text-neutral-900 font-semibold border-b border-neutral-300 transition-all duration-200 hover:bg-neutral-300 hover:scale-105"
                         >
                             {route.name}
                         </NavLink>

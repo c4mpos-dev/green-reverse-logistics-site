@@ -4,6 +4,7 @@ import { DefaultLayout } from "./layouts/DefaultLayout.tsx";
 
 import { Home } from "./pages/Home.tsx";
 import { Faq } from "./pages/Faq.tsx";
+import { Contact } from "./pages/Contact.tsx";
 
 export function Router() {
     return (
@@ -11,6 +12,7 @@ export function Router() {
             <Route path="/" element={<DefaultLayout />}>
                 <Route path="/" element={<Home />} />
                 <Route path="/faq" element={<Faq />}/>
+                <Route path="/contato" element={<Contact />}/>
             </Route>
         </Routes>
     );
