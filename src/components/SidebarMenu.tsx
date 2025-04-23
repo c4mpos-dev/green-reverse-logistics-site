@@ -31,7 +31,7 @@ export function SidebarMenu({ isOpen, onClose, routes }: SidebarMenuProps) {
             >
                 <div className="flex flex-col h-full p-6">
                     <div className="flex items-center justify-between mb-4">
-                        <h2 className="text-xl font-bold text-black">Navegação</h2>
+                        <h2 className="text-lg font-bold text-black">Navegação</h2>
                         <Menu checked={isOpen} onChange={onClose} />
                     </div>
 
@@ -39,13 +39,14 @@ export function SidebarMenu({ isOpen, onClose, routes }: SidebarMenuProps) {
                         <NavLink
                             key={route.path}
                             to={route.path}
+                            onClick={onClose} // apenas fecha o menu
                             className="py-3 text-neutral-900 font-medium border-b border-neutral-300"
-                            onClick={onClose}
                         >
                             {route.name}
                         </NavLink>
                     ))}
-                    <span className="mt-auto text-xs text-gray-400">© 2025 GRL</span>
+
+                    <span className="mt-auto text-xs text-gray-400">© {new Date().getFullYear()} GRL</span>
                 </div>
             </div>
         </div>

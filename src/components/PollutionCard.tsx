@@ -11,7 +11,7 @@ export function PollutionCard() {
 
     return (
         <div
-            className="group relative h-96 w-72 [perspective:1000px] mb-6 md:mb-0"
+            className="group relative h-96 w-64 sm:w-72 [perspective:1000px] mb-6 md:mb-0"
             onClick={handleFlip}
         >
             <div

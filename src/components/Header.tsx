@@ -1,9 +1,8 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
-
+import { NavLink, useNavigate } from "react-router-dom";
 import GRLSimbol from "../assets/simbol.png";
-import { Menu } from "./Menu"; // botão de hambúrguer
-import { SidebarMenu } from "./SidebarMenu"; // novo componente que vamos criar
+import { Menu } from "./Menu";
+import { SidebarMenu } from "./SidebarMenu";
 
 type RouteItem = {
     name: string;
@@ -12,15 +11,42 @@ type RouteItem = {
 
 export function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const navigate = useNavigate();
 
     const routes: RouteItem[] = [
         { name: "Início", path: "/" },
         { name: "Sobre Nós", path: "/sobre" },
-        { name: "Serviços", path: "/servicos" },
-        { name: "Como Funciona", path: "/faq" },
+        { name: "Como Funciona?", path: "/#como-funciona" },
+        { name: "Faq", path: "/faq" },
         { name: "Parceiros", path: "/parceiros" },
         { name: "Contato", path: "/contato" },
     ];
+
+    const handleScroll = (path: string) => {
+        const [basePath, hash] = path.split("#");
+
+        if (window.location.pathname === basePath) {
+            // Se estiver na mesma página, faz a rolagem suave
+            if (hash) {
+                const targetElement = document.getElementById(hash);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 68,
+                        behavior: "smooth",
+                    });
+                }
+            } else {
+                // Se não tiver hash, rola até o topo
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                });
+            }
+        } else {
+            // Navega para a nova página normalmente
+            navigate(path);
+        }
+    };
 
     return (
         <>
@@ -39,7 +65,12 @@ export function Header() {
 
                     <nav className="hidden md:flex gap-6">
                         {routes.map((route) => (
-                            <NavLink key={route.path} to={route.path}>
+                            <NavLink
+                                key={route.path}
+                                to={route.path}
+                                onClick={() => handleScroll(route.path)} // Navegação suave
+                                className="cursor-pointer"
+                            >
                                 {route.name}
                             </NavLink>
                         ))}
@@ -47,7 +78,6 @@ export function Header() {
                 </div>
             </header>
 
-            {/* Sidebar para mobile */}
             <SidebarMenu
                 isOpen={isMenuOpen}
                 onClose={() => setIsMenuOpen(false)}

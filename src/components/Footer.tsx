@@ -25,7 +25,7 @@ export function Footer() {
                         <ul className="space-y-2 text-sm">
                             <li className="flex items-center gap-2">
                                 <FontAwesomeIcon icon={faPhone} className="w-4 h-4"/>
-                                (24) 99922-7588
+                                (24) 99922-7558
                             </li>
                             <li className="flex items-center gap-2">
                                 <FontAwesomeIcon icon={faLocationDot} className="w-4 h-4"/>
