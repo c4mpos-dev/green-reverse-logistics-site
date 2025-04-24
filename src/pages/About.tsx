@@ -29,7 +29,7 @@ export function About() {
                         <div className="bg-white border border-green-700 rounded-2xl p-6 shadow-md shadow-black/40 hover:shadow-lg hover:scale-105 transition-all duration-300">
                             <h2 className="text-xl font-semibold text-green-700 flex items-center gap-3 mb-2">
                                 <FontAwesomeIcon icon={faRecycle} className="text-green-700 text-xl" />
-                                Compromisso com o Meio Ambiente
+                                Compromisso com o meio ambiente
                             </h2>
                             <p className="text-gray-700">
                                 Nosso propósito é dar um destino ecologicamente correto a equipamentos que seriam
@@ -40,7 +40,7 @@ export function About() {
                         <div className="bg-white border border-green-700 rounded-2xl p-6 shadow-md shadow-black/40 hover:shadow-lg hover:scale-105 transition-all duration-300">
                             <h2 className="text-xl font-semibold text-green-700 flex items-center gap-3 mb-2">
                                 <FontAwesomeIcon icon={faTruck} className="text-green-700 text-xl" />
-                                Coleta em Todo o Estado
+                                Coleta em todo o estado
                             </h2>
                             <p className="text-gray-700">
                                 Se você mora no estado do Rio de Janeiro e deseja fazer um descarte consciente, basta entrar em contato conosco solicitando a coleta,
@@ -51,7 +51,7 @@ export function About() {
                         <div className="bg-white border border-green-700 rounded-2xl p-6 shadow-md shadow-black/40 hover:shadow-lg hover:scale-105 transition-all duration-300">
                             <h2 className="text-xl font-semibold text-green-700 flex items-center gap-3 mb-2">
                                 <FontAwesomeIcon icon={faHandsHelping} className="text-green-700 text-xl" />
-                                Parceiros de Responsabilidade
+                                Parceiros de responsabilidade
                             </h2>
                             <p className="text-gray-700">
                                 Após a coleta, o produto é armazenado e levado em segurança até nossos parceiros, onde garantem uma reciclagem segura e correta, 
