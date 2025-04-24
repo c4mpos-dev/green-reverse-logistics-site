@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+
 import { ParticlesBackground } from "../components/ParticlesBackground";
 
 export function Contact() {
@@ -16,7 +17,7 @@ export function Contact() {
                     Entre em contato com a gente agora mesmo!
                 </p>
 
-                <div className="bg-neutral-100 p-8 rounded-2xl shadow-xl shadow-black/20 border border-green-700">
+                <div className="bg-neutral-100/80 p-8 rounded-2xl shadow-xl shadow-black/20 border border-green-700">
                     <h2 className="text-2xl font-semibold text-green-800 mb-4">Nosso atendimento é rápido e direto!</h2>
                     <p className="text-green-900 mb-6">
                         Clique no botão abaixo para iniciar uma conversa via WhatsApp. Será um prazer te atender!

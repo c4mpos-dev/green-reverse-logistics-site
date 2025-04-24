@@ -18,7 +18,7 @@ export function Header() {
         { name: "Como funciona?", path: "/#como-funciona" },
         { name: "Sobre nós", path: "/sobre" },
         { name: "Parceiros", path: "/parceiros" },
-        { name: "Faq", path: "/faq" },
+        { name: "FAQ", path: "/faq" },
         { name: "Contato", path: "/contato" },
     ];
 
