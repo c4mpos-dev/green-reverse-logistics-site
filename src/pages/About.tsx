@@ -14,12 +14,14 @@ export function About() {
 
             <div className="max-w-5xl mx-auto px-6 py-16 bg-neutral-200 relative z-10">
                 <div className="flex flex-col items-center">
-                    <img src={GRLLogo} alt="Logo GRL" className="h-16 sm:h-24 mb-6" />
-                    <div className="bg-green-800 w-full h-0.5 mb-4"></div>
-                    <h1 className="text-4xl font-bold text-green-800 mb-4">Quem Somos?</h1>
-                    <p className="text-lg max-w-3xl mb-8">
-                        A <strong>Green Reverse Logistics</strong> é uma empresa especializada na coleta e destinação correta de resíduos eletrônicos. Atuamos com foco em logística reversa e práticas sustentáveis em todo o estado do Rio de Janeiro.
-                    </p>
+                    <img src={GRLLogo} className="h-16 sm:h-24 mb-6" />
+                    <div className="bg-green-800 w-full h-0.5 mb-8"></div>
+                    <div className="flex flex-col w-full">
+                        <h1 className="text-4xl font-bold text-green-800 mb-4">Quem Somos?</h1>
+                        <p className="text-lg max-w-3xl mb-8">
+                            A <strong>Green Reverse Logistics</strong> é uma empresa especializada na coleta e destinação correta de resíduos eletrônicos. Atuamos com foco em logística reversa e práticas sustentáveis em todo o estado do Rio de Janeiro.
+                        </p>
+                    </div>
                 </div>
 
                 <div className="grid lg:grid-cols-2 gap-10 mt-4">

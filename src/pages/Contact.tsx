@@ -33,7 +33,7 @@ export function Contact() {
                 </div>
 
                 <div className="mt-12 text-sm text-gray-500">
-                    Ou, se preferir, envie um e-mail para <span className="font-medium text-green-800">xxxxxxx@xxxx.com.br</span>
+                    Ou, se preferir, envie um e-mail para <span className="font-medium text-green-800">wagner.sds@gmail.com</span>
                 </div>
             </div>
         </div>

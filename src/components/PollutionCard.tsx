@@ -1,6 +1,7 @@
 import { useState } from "react";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowPointer } from "@fortawesome/free-solid-svg-icons";
+import { faHandPointer } from "@fortawesome/free-solid-svg-icons";
 
 export function PollutionCard() {
     const [flipped, setFlipped] = useState(false);
@@ -11,15 +12,15 @@ export function PollutionCard() {
 
     return (
         <div
-            className="group relative h-96 w-64 sm:w-72 [perspective:1000px] mb-6 md:mb-0"
+            className="relative h-96 w-64 sm:w-72 [perspective:1000px] mb-6 md:mb-0 cursor-pointer"
             onClick={handleFlip}
         >
             <div
                 className={`absolute duration-1000 w-full h-full [transform-style:preserve-3d] ${
-                    flipped ? "[transform:rotateX(180deg)]" : "group-hover:[transform:rotateX(180deg)]"
+                    flipped ? "[transform:rotateX(180deg)]" : ""
                 }`}
             >
-                {/* Frente do Card */}
+                {/* Frente */}
                 <div className="absolute w-full h-full rounded-xl bg-gradient-to-br from-green-800 to-green-500 p-6 text-white [backface-visibility:hidden] shadow-lg shadow-black/50">
                     <div className="flex flex-col h-full">
                         <div className="flex justify-between items-start">
@@ -30,13 +31,13 @@ export function PollutionCard() {
                             <p className="text-lg">Todos os anos, o mundo gera uma enorme quantidade de lixo eletrônico...</p>
                         </div>
                         <div className="flex items-center gap-2 mt-auto">
-                            <FontAwesomeIcon icon={faArrowPointer} className="text-sm" />
+                            <FontAwesomeIcon icon={faHandPointer} className="text-sm" />
                             <p className="text-sm opacity-80">Saiba mais!</p>
                         </div>
                     </div>
                 </div>
 
-                {/* Verso do Card */}
+                {/* Verso */}
                 <div className="absolute w-full h-full rounded-xl bg-gradient-to-br from-green-800 to-amber-600 p-6 text-white [transform:rotateX(180deg)] [backface-visibility:hidden] shadow-lg shadow-black/50">
                     <div className="flex flex-col h-full">
                         <div className="text-xl font-bold mb-2">Impacto Global</div>
@@ -50,9 +51,9 @@ export function PollutionCard() {
                         </div>
                         <div className="flex justify-between items-center mt-auto">
                             <button
-                                className="px-4 py-2 bg-neutral-100 text-green-700 border border-green-500 rounded-lg font-semibold transition-all hover:cursor-pointer hover:bg-green-700 hover:opacity-80 hover:border-neutral-100 hover:text-white hover:scale-105"
+                                className="px-4 py-2 bg-neutral-100 text-green-700 border border-green-500 rounded-lg font-semibold transition-all hover:bg-green-700 hover:text-white hover:scale-105"
                                 onClick={(e) => {
-                                    e.stopPropagation(); // evita que o clique reverta o card
+                                    e.stopPropagation(); // impede que o botão reverta o flip
                                     window.open(
                                         "https://greeneletron.org.br/blog/lixo-eletronico-mundo-bate-recorde-historico-de-geracao-de-residuo/",
                                         "_blank"
