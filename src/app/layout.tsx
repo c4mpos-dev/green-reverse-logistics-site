@@ -15,7 +15,7 @@ export default function RootLayout({
                     name="description"
                     content="Soluções sustentáveis para logística reversa de resíduos eletrônicos no estado do Rio de Janeiro."
                 />
-                <link rel="icon" href="/symbol-white.png" />
+                <link rel="icon" href="/symbol.png" />
             </head>
             <body>
                 <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
