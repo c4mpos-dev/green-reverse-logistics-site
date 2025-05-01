@@ -1,36 +1,24 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌱 Green Reverse Logistics - Website Oficial
 
-## Getting Started
+Este é o repositório do site institucional da **Green Reverse Logistics**, uma empresa especializada em logística reversa e sustentabilidade ambiental no estado do Rio de Janeiro.
 
-First, run the development server:
+## 🔗 Acesse o site
+[https://www.greenreverselogistics.com.br](https://www.greenreverselogistics.com.br)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚛 Sobre a empresa
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A Green Reverse Logistics atua na coleta e destinação ambientalmente correta de materiais eletrônicos inservíveis. Nosso compromisso é com a preservação ambiental e a construção de um futuro mais sustentável.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Parcerias:
+- Ambipar
+- Green Eletron
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧩 Tecnologias utilizadas
 
-## Learn More
+- HTML5 / CSS3 / JavaScript
+- Next.js com Tailwind CSS
+- Font Awesome (ícones)
 
-To learn more about Next.js, take a look at the following resources:
+## 🛑 Licença
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Este projeto está protegido sob a **Licença Proprietária (All Rights Reserved)**. Nenhum conteúdo deste repositório (código, design, imagens, textos) pode ser copiado, modificado ou reutilizado em outros projetos sem autorização expressa do autor.
