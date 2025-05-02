@@ -222,7 +222,7 @@ export default function Home() {
 							Impacto Ambiental
 						</h2>
 						<p className="max-w-[700px] text-muted-foreground">
-							Toneladas de lixo eletrônico acumulado no Brasil por ano (Em milhões)
+							Toneladas de lixo eletrônico coletado no Brasil por ano (Em milhões)
 						</p>
 					</div>
 					<WasteGraph />

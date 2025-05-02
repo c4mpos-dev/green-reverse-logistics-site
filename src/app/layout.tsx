@@ -16,6 +16,16 @@ export default function RootLayout({
                     content="Soluções sustentáveis para logística reversa de resíduos eletrônicos no estado do Rio de Janeiro."
                 />
                 <link rel="icon" href="/symbol.png" />
+                <script type="application/ld+json" dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Organization",
+                        "name": "Green Reverse Logistics",
+                        "url": "https://www.greenreverselogistics.com.br",
+                        "logo": "https://www.greenreverselogistics.com.br/symbol.png",
+                        "description": "Soluções sustentáveis para logística reversa de resíduos eletrônicos no estado do Rio de Janeiro.",
+                    })
+                }} />
             </head>
             <body>
                 <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
