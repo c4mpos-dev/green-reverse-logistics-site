@@ -14,8 +14,8 @@ export default function RootLayout({
                 <meta
                     name="description"
                     content="Soluções sustentáveis para logística reversa de resíduos eletrônicos no estado do Rio de Janeiro."
-                />
-                <link rel="icon" href="/symbol.png" />
+                />      
+                <meta name="google-site-verification" content="google4e03a647cb969f99.html" />
                 <script type="application/ld+json" dangerouslySetInnerHTML={{
                     __html: JSON.stringify({
                         "@context": "https://schema.org",
@@ -26,6 +26,7 @@ export default function RootLayout({
                         "description": "Soluções sustentáveis para logística reversa de resíduos eletrônicos no estado do Rio de Janeiro.",
                     })
                 }} />
+                <link rel="icon" href="/symbol.png" />
             </head>
             <body>
                 <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
